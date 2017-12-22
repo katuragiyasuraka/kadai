@@ -1,0 +1,20 @@
+.tab{
+  overflow: hidden;
+  margin: 0;
+}
+.tab li{
+  list-style-type: none;
+  background:#ccc; padding:5px 25px; float:left; margin-right:1px;
+}
+
+.content li{
+  list-style-type: none;
+  background:#eee; padding:20px;
+}
+.hide {
+  display:none;
+}
+ul.content{
+  margin: 0;
+  height: 800px;
+}

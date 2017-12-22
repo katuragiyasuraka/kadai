@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="bank.css">
+    <script type="text/javascript" src="slideshow.js"></script>
     <title></title>
   </head>
   <body>
@@ -12,13 +13,13 @@
     <li><img id="bankcode" src="images/bank_code.png"></li>
     <li  id="size">
       <p>文字のサイズを変更できます。</p>
-      <img src="images/fontsize_s.png">
-      <img src="images/fontsize_m.png">
-      <img src="images/fontsize_l.png">
+      <img id="small"src="images/fontsize_s.png">
+      <img id="middle" src="images/fontsize_m.png">
+      <img id="large" src="images/fontsize_l.png">
     </li>
     <li id="sitemap">
-    <img class="gs" src="images/globalsite.png">
-    <img class="gs" src="images/sitemap.png">
+    <img class="gs1" src="images/globalsite.png">
+    <img class="gs2" src="images/sitemap.png">
     </li>
     <li><input id="searchbx" type="text" name="search" placeholder="検索ワードを入力"></li>
     <li><img id="searchbtn" src="images/search_btn.jpg"></li>
@@ -39,10 +40,11 @@
     <div id="contents">
       <div id="main">
         <div id="graphic">
-          <ul>
-            <li><img id="image1" src="images/new1.jpg" alt="">
-            </li>
-          </ul>
+        	<ul>
+        		<li class="now"><img class="image1" src="images/new1.jpg" alt=""></li>
+        		<li><img class="image2" src="images/new2.jpg" alt=""></li>
+        		<li><img class="image3" src="images/new3.jpg" alt=""></li>
+        	</ul>
         </div>
           <div id="thums">
   			<img class="thum" src="images/thum_1.jpg" alt="">
@@ -92,6 +94,7 @@
       </ul>
       </div>
     </div>
+
     <div id="sub">
       <div id="sub1">
       <h4> インターネットバンキング</h4>
@@ -177,14 +180,14 @@
       </div>
       <nav id="nav2">
         <ul id="navi_foo">
-      		<li class="nav"><a href="concept.html">個人のお客様</a></li>
-      		<li class="nav"><a href="plan.html">法人のお客様</a></li>
-      		<li class="nav"><a href="fair.html">株主・投資家の皆様</a></li>
-      		<li class="nav"><a href="contact.html">採用情報</a></li>
-          <li class="nav"><a href="contact.html">セラク銀行について</a></li>
+      		<li class="nav_f"><a href="concept.html">お客様の個人情報保護について</a></li>
+      		<li class="nav_f"><a href="plan.html">金融商品勧誘方針</a></li>
+      		<li class="nav_f"><a href="fair.html">法人等のお客様の情報について</a></li>
+      		<li class="nav_f"><a href="contact.html">本サイトのご利用にあたって</a></li>
+          <li class="nav_f"><a href="contact.html">反社会的勢力に対する基本方針</a></li>
       	</ul>
       </nav>
-      <p>Copyright@2015 Seraku Banking Corporation.All Rights Reserved.</p>
+      <p>Copyright©2015 Seraku Banking Corporation.All Rights Reserved.</p>
     </footer>
   </body>
 </html>
