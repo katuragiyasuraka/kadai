@@ -24,12 +24,20 @@ jQuery(function ($) {
 
 
 $(function() {
-	$(".tab li").click(function(){
-		var index = $(".tab li").index(this);
-		$(".content li").css("display","none");
-		$(".content li").eq(index).css("display","block");
-		$(".tab li").removeClass("select");
-		$(this).addClass("select")
-
-	});
+    //タブクリック時の処理
+    $('#demo3 .tab_area ul li').click(function() {
+        //.index()を使いクリックされたタブの順番を変数indexに代入する
+        var index = $('#demo3 .tab_area ul li').index(this);
+				console.log(index);
+        //指定した全コンテンツを非表示にする
+        $('.content_block').css('display','none');
+        //クリックされたタブと同じ順番のコンテンツのみを表示させる
+        $('.content_block').eq(index).css('display','block');
+				// $('#demo3 .tab_area ul li').removeClass("on");
+				for(i = 1 ; i <= 4 ; i++){
+					$('#demo3 .tab_area ul li.tab'+ i).children("img").attr('src','images/tab0'+ i +'.png');
+				}
+				index = index + 1;
+			 	$(this).children("img").attr('src','images/tab0'+ index +'_on.png');
+	 });
 });

@@ -1,20 +1,64 @@
-.tab{
-  overflow: hidden;
-  margin: 0;
-}
-.tab li{
-  list-style-type: none;
-  background:#ccc; padding:5px 25px; float:left; margin-right:1px;
+/* #demo3 .tab_area ul li.tab1{
+  background-image: url("images/tab01_on.png");
 }
 
-.content li{
-  list-style-type: none;
-  background:#eee; padding:20px;
+#demo3 .tab_area ul li.tab2{
+  background-image: url("images/tab02.png");
 }
-.hide {
-  display:none;
+#demo3 .tab_area ul li.tab3{
+  background-image: url("images/tab03.png");
 }
-ul.content{
+#demo3 .tab_area ul li.tab4{
+  background-image: url("images/tab04.png");
+} */
+#demo3 .tab_area ul{
+  overflow: hidden;
+  padding:0;
   margin: 0;
-  height: 800px;
+}
+/*タブ部分*/
+#demo3 .tab_area ul li{
+    display:block;
+    float:left;
+    height: 45px;
+    width: 170px;
+    border-right:1px solid #ffffff;
+}
+#demo3 .tab_area ul li:hover {
+    color:#ffffff;
+    cursor:pointer;
+}
+/*コンテンツ部分の表示領域を固定してはみ出さないようにする*/
+#demo3 .content_area {
+    width: 680px;
+    overflow: hidden;
+    height: 300px;
+    font-size: 20px;
+    border: 1px solid #DDDDDD;
+    position: relative;
+    border-width: 0 1px 1px 1px;
+    border-color: black;
+}
+#demo3 .content_area .content_block {
+    height: 140px;
+    padding: 10px;
+    width: 654px;
+    -webkit-box-sizing : border-box ;
+    -moz-box-sizing : border-box ;
+    box-sizing : border-box ;
+}
+.content_block {
+    padding: 10px;
+}
+
+ul#contents3_1_1{
+  list-style-type: none;
+  padding-left: 0;
+}
+ul#contents3_1_1 li{
+  padding: 20px 0 20px 175px;
+  text-indent: -260px;
+}
+div#content_area_inner{
+
 }
