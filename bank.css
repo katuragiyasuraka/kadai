@@ -1,96 +1,143 @@
-body{
-  width: 1200px;
-}
-header#top, #contents,footer{
-  margin: 0 auto 0 auto;
-  width: 950px;
+header#top, #contents{
+  margin: 0 auto 0 190px;
 }
 header#top{
   height: 70px;
-  width: 1000px
+  width: 1000px;
 }
 header#top ul{
   overflow: hidden;
   margin-bottom: 0;
-}
-ul#navi{
-  padding-left: 0;
 }
 header#top ul li{
   float: left;
   list-style-type: none;
   float: left;
 }
-#bankcode{
+header#top ul li img.serakulogo{
+  margin-top: 20px;
+}
+header#top ul li img.bankcode{
   margin-top: 60px;
   margin-right: 20px;
 }
-#size p{
-  margin-bottom: 0;
+header#top ul li.size{
+  margin: 20px 20px 0 0;
 }
-  #size img#small:hover
- ,#size img#middle:hover
- ,#size img#large:hover
+header#top ul li p{
+  margin-bottom: 0;
+  font-size: 70%;
+}
+header#top ul li.size img.small{
+  margin-left: 30px;
+}
+  .size img#small:hover
+ ,.size img#middle:hover
+ ,.size img#large:hover
  ,.gs1:hover
  ,.gs2:hover{
   opacity: 0.8;
 }
-#sitemap{
-  margin-top: 20px;
-  margin-top: 15px;
+header#top ul li.sitemap{
+  margin-top: 30px;
 }
-#searchbtn{
-  height: 24px;
+header#top ul li img.searchbtn{
+  height: 20px;
+  margin-top: 2px;
 }
-nav{
-  width: 100%;
-  height: 50px;
-  margin-bottom: 20px;
+div#navid{
+  height: 41px;
+  border-bottom:2px solid #000044;
+  background-image: url(images/gnavi_bg.png);
 }
-nav ul#navi{
-  width:100%;
-  margin:0 auto 0 auto;
-  padding-top: 30px;
-  display:table;
+ul.nav{
+  overflow: hidden;
+  padding-left: 0;
+  margin: 20px 0 20px 180px;
 }
-nav ul#navi li{
-  display:table-cell;
-  vertical-align:middle;
+ul.nav li{
+  margin-left: 10px;
+  height: 40px;
+  float: left;
+  list-style-type: none;
 }
-nav ul#navi a{
-  height:35px;
-  width:400px;
-  display:table-cell;
-  text-align:center;
-  vertical-align:middle;
-  background:#CCCCCC;
-  color:black;
-  border-right:1px solid #DDD;
-  border-bottom: 1px solid #000044;
-  text-decoration: none;
- }
-nav ul#navi li a:hover{
-  background:#BBFFFF;
+ul.nav li div.nav01 a{
+  width: 181px;
+  height: 40px;
+  background: url("images/navi.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+  background-position: 0 -40px;
+}
+ul.nav li div.nav01 a:hover{
+  background-position: 0 0px;
+}
+ul.nav li div.nav02 a{
+  width: 181px;
+  height: 40px;
+  background: url("images/navi.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+  background-position: -181px -40px;
+}
+ul.nav li div.nav02 a:hover{
+  background-position: -181px 0px;
+}
+ul.nav li div.nav03 a{
+  width: 215px;
+  height: 40px;
+  background: url("images/navi.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+  background-position: -390px -40px;
+}
+ul.nav li div.nav03 a:hover{
+  background-position: -390px 0px;
+}
+ul.nav li div.nav04 a{
+  width: 173px;
+  height: 40px;
+  background: url("images/navi.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+  background-position: -610px -40px;
+}
+ul.nav li div.nav04 a:hover{
+  background-position: -610px 0px;
+}
+ul.nav li div.nav05 a{
+  width: 240px;
+  height: 40px;
+  background: url("images/navi.png") no-repeat;
+  display: block;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background-position: -785px -40px;
+}
+ul.nav li div.nav05 a:hover{
+  background-position: -785px 0px;
 }
 div#contents{
   overflow: hidden;
+  height: 1400px;
   width: 1050px;
 }
-#main{
+div#main{
   float:left;
-  width: 720px;
-}
-div#graphic{
-  height: 304px;
+  width: 700px;
   margin-left: 40px;
 }
-#graphic ul{
+div.graphic{
+  height: 304px;
+  margin-left: 20px;
+}
+div.graphic ul{
   margin-bottom: 0;
   position: relative;
 	list-style: none;
 	padding-left: 0;
 }
-#graphic ul li{
+div.graphic ul li{
   list-style-type: none;
   display: block;
 	position: absolute;
@@ -100,10 +147,10 @@ div#graphic{
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
 }
-#graphic ul li img{
+div.graphic ul li img{
   border:2px #000044 solid;
 }
-#graphic ul li.now {
+div.graphic ul li.now{
 	display: block;
 	position: relative;
 	top: 0;
@@ -111,133 +158,241 @@ div#graphic{
 	z-index: 1;
 	opacity: 1;
 }
-div#thums{
+div.thums{
   width: 654px;
   height: 90px;
-  margin-left: 40px;
+  margin-left: 20px;
   background-color: #000044;
   overflow: hidden;
 }
-img.thum{
-    float: left;
-    margin-top: 9px;
-    padding:6px;
+div.thums img.thum{
+  float: left;
+  margin-top: 9px;
+  padding:6px;
 }
-img.thum:hover{
+div.thums img.thum:hover{
   opacity: 0.8;
 }
-.box {
-    padding: 0;
-    margin: 2em  0 0 42px;
-    /* font-weight: bold; */
-    border: solid 3px #000044;/*線*/
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    width:654px;
-    height:100px;
-}
-.box h4 {
-    margin:0;
-    padding: 0;
-    width: 654px;
-    background: #000044;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    color: #FFF;
-}
-.box ul li{
-  list-style-image: url(images/list_head.gif);
-  float: left;
-  margin-right: 40px;
-  margin-left: 30px;
-}
-.box#box2 ul {
+
+div#box1,div#box2,div#box3 ,div#box4{
   overflow: hidden;
-  margin:10px 0 0 0;
-}
-.box#box2 ul li{
-  margin-right: 0;
-}
-.box#box3 ul li{
-  padding-top: 10px;
-}
-.box#box4 ul li{
-  padding-top: 10px;
-}
-
-
-
-div#sub1{
-  float: right;
   padding: 0;
-  font-weight: bold;
-  border: solid 3px #000044;/*線*/
-  border-top-left-radius: 7px;
+  margin-top: 10px;
+  border: solid 3px #000044;
+  border-top-left-radius: 5px;
   border-top-right-radius: 7px;
-  width:280px;
-  height:250px;
-  margin-top: 20px;
+  width:688px;
+  height:100px;
 }
-div#sub1 h4 {
-    margin:0;
-    padding-left: 40px;
-    width: 300px;
-    background: #000044;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    color: #FFF;
+div#box1 h4,div#box2 h4,div#box3 h4,div#box4 h4{
+  margin:0;
+  padding:0 0 0 5px;
+  width: 688px;
+  height: 28px;
+  background: #000044;
+  color: #FFF;
+  font-family:serif;
 }
-div#sub1 img{
-  padding-left: 40px;
-}
-div#sub1 p{
-  padding-left: 5px;
-}
-div#sub2{
-  float: right;
-  padding: 0;
-  font-weight: bold;
-  border: solid 3px #000044;/*線*/
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  width:280px;
-  height:400px;
-  margin-top:20px;
-  margin-bottom: 20px;
-}
-div#sub2 h4 {
-    margin:0;
-    padding-left: 70px;
-    width: 280px;
-    background: #000044;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    color: #FFF;
-}
-div#sub2 img{
-  padding: 5px 0 0 35px;
-}
-div#sub2 ul li{
-  list-style-image: url(images/list_head.gif);
+ div#box1 ul li,div#box2 ul li,div#box3 ul li,div#box4 ul li{
   float: left;
-  margin-right: 40px;
-  margin-left: 30px;
+  list-style-image: url(images/list_head.gif);
 }
-div#sub3{
-  float: right;
-  padding: 0;
-  width:280px;
-  height:480px;
+div#box1 ul li a,div#box2 ul li a,div#box3 ul li a,div#box4 ul li a{
+ text-decoration: none;
+ color: #000044;
+}
+div#box ul.box_1_1{
+  margin-top: 10px;
+}
+div#box1 ul.box_1_1 li{
+  margin-right: 120px;
+}
+div#box1 ul.box_1_2 li{
+  margin-right: 120px;
+}
+div#box1 ul.box_1_1 li.open_account{
+  margin-right: 105px;
+}
+div#box1 ul.box_1_1 li.loan{
+  margin-right: 135px;
+}
+div#box1 ul.box_1_1 li.investment{
   margin-right:0;
 }
-div#sub3 img{
-  width:280px;
+div#box1 ul.box_1_2 li.campaign{
+  margin-right: 0;
+}
+div#box2 ul.box_2_1 li{
+  margin-right: 110px;
+}
+div#box2 ul.box_2_2 li{
+  margin-right: 30px;
+}
+div#box2 ul.box_2_1 li.densai{
+  margin-right: 140px;
+}
+div#box2 ul.box_2_2 li.contribute {
+  margin-right: 60px;
+}
+div#box2 ul.box_2_1 li.csr{
+  margin-right:0;
+}
+div#box2 ul.box_2_2 li.global_web{
+  margin-right:0;
+}
+div#box3 ul.box_3_1 li{
+  margin-right: 125px;
+}
+ul.box_3_1,ul.box_4_1{
+  overflow:hidden;
+  margin-top: 26px;
+}
+div#box4 ul.box_4_1 li{
+  margin-right: 122px;
+}
+div#tab_content_area{
+  margin-top: 30px;
+}
+div#tab_content_area div.tab_area ul{
+  overflow: hidden;
+  padding:0;
+  margin: 0;
+}
+div#tab_content_area div.tab_area ul li{
+  display:block;
+  float:left;
+  height: 45px;
+  width: 170px;
+  border-right:1px solid #ffffff;
+}
+div#tab_content_area div.tab_area ul li:hover{
+  color:#ffffff;
+  cursor:pointer;
+}
+div#tab_content_area div.content_area{
+  width: 681px;
+  overflow: hidden;
+  height: 420px;
+  font-size: 20px;
+  border: 1px solid #DDDDDD;
+  position: relative;
+  border-width: 0 1px 1px 1px;
+  border-color: gray;
+}
+div#tab_content_area div.content_area .content_block{
+  -webkit-box-sizing : border-box ;
+  -moz-box-sizing : border-box ;
+  box-sizing : border-box ;
+}
+div.content_block{
+  padding-left: 25px;
+  font-size: 60%;
+}
+ul#contents3_1_1 , #contents3_2_2, #contents3_3_3, #contents3_4_4{
+  list-style-type: none;
+  padding-left: 0;
+}
+ul#contents3_1_1 li, #contents3_2_2 li, #contents3_3_3 li, #contents3_4_4 li{
+  padding: 5px 0 5px 175px;
+  text-indent: -220px;
+  font-size: 110%;
+}
+ul#contents3_1_1 li img, #contents3_2_2 li img, #contents3_3_3 li img, #contents3_4_4 li img{
+  margin: 0 5px 0 5px;
+}
+ul#contents3_1_1 li a, #contents3_2_2 li a, #contents3_3_3 li a, #contents3_4_4 li a{
+  text-decoration: none;
+}
+div.content_area_inner{
+  padding-left: 25px;
+}
+div#to_login{
+  float: right;
+  margin: 20px 40px 0 0;
+  font-weight: bold;
+  border: solid 5px #000044;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width:230px;
+  height:230px;
+}
+div#to_login h4.login_head_tab{
+  padding:2px  10px 0 10px;
+  margin:0;
+  width: 210px;
+  height: 30px;
+  background: #000044;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  color: #FFF;
+}
+div#to_login p.internet_banking{
+  font-size: 80%;
+  padding-left: 2px;
+}
+div#to_login img.login_survice{
+  padding-left: 20px;
+}
+div#to_login img.first_login{
+  padding-left: 30px;
+}
+div#to_login p.forget_pas{
+  font-size: 80%;
+  padding-left: 30px;
+}
+div#to_login p.forget_pas a{
+  text-decoration:none;
+}
+div#survice_guide{
+  float: right;
+  padding: 0;
+  font-weight: bold;
+  border: solid 6px #000044;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width:230px;
+  height:430px;
+  margin-top:40px;
+}
+div#survice_guide h4{
+  margin:0;
+  height: 32px;
+  width: 230px;
+  background: #000044;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  color: #FFF;
+}
+div#survice_guide img{
+  padding:8px 0 0 10px;
+}
+div#survice_guide img:hover{
+  opacity: 0.8;
+}
+div#survice_guide ul li{
+  list-style-image: url(images/list_head.gif);
+  float: left;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+div#banners{
+  float: right;
+  width:240px;
+  height:480px;
+  margin-top: 40px;
+  margin-left: 40px;
+
+}
+div#banners img{
+  width:240px;
   margin-bottom: 10px;
+}
+div#banners img:hover{
+  opacity: 0.8;
 }
 footer{
   height: 500px;
-  width: 100%;
-  margin-top: 300px;
+  width: auto;
   background-image: url(images/footer_bg.jpg);
   color: #ffffff;
 }
@@ -245,62 +400,59 @@ footer div.footer_mozi{
   width: 230px;
   float: left;
   margin-top: 40px;
+  margin-left: 30px;
   overflow: hidden;
 }
 footer div.footer_mozi h4{
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
-
 footer div.footer_mozi ul li{
   width: 200px;
   padding-right: 25px;
   margin-bottom: 5px;
   list-style-type: circle;
 }
-
 footer div.footer_mozi ul{
   width: 200px;
 }
-
 footer div.footer_mozi ul li a{
   color: #ffffff;
 }
 nav#nav2{
   width: 100%;
-  height: 100px;
+  height: 60px;
   overflow: hidden;
+  background-color: #ffffff;
 }
-li.nav_f{
-  height: 50px;
-  width: 250px;
+nav#nav2 div#nav_div{
+  background-color: #ffffff;
 }
-nav#nav2 ul#navi_foo{
+nav#nav2 ul.navi_foo{
   width:100%;
   margin:0 auto 0 auto;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-left: 0;
   display:table;
 }
-nav#nav2 ul#navi_foo li{
+nav#nav2 ul.navi_foo li{
   display:table-cell;
   vertical-align:middle;
 }
-nav#nav2 ul#navi_foo a{
+nav#nav2 ul.navi_foo li a{
   height:20px;
   width:400px;
   display:table-cell;
   text-align:center;
   vertical-align:middle;
-  background:#CCCCCC;
-  border-right:1px solid #DDD;
-  border-bottom: 1px solid #000044;
+  background: #ffffff;
+  border-right:1px solid gray;
   text-decoration: none;
  }
-nav#nav2 ul#navi_foo li a:hover{
+nav#nav2 ul.navi_foo li a:hover{
   background:#BBFFFF;
 }
 footer p{
-  margin-top: 0;
-  margin-left: 280px;
+  margin-top: 50px;
+  margin-left: 380px;
 }
